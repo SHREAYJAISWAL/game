@@ -35,17 +35,17 @@ int main() {
 
         for (int i = 0; i < 10; i++) {
             if (i == step) {
-                if (obstaclePos == 0) printf("| @        |\n");
-                else if (obstaclePos == 1) printf("|     @    |\n");
-                else printf("|        @ |\n");
+                if (obstaclePos == 0) printf("| @         |\n");
+                else if (obstaclePos == 1) printf("|     @     |\n");
+                else printf("|        @  |\n");
             } else {
                 printf("|           |\n");
             }
         }
 
-        if (x == 0) printf("| ^        |\n");
-        else if (x == 1) printf("|     ^    |\n");
-        else printf("|        ^ |\n");
+        if (x == 0) printf("| ^         |\n");
+        else if (x == 1) printf("|     ^     |\n");
+        else printf("|        ^  |\n");
 
         printf("Score: %d   Lives: %d   High Score: %d\n", score, lives, highScore);
         if(lives==0)break;
