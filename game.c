@@ -50,9 +50,11 @@ int main() {
             if (x == 0) printf("| ^         |\n");
             else if (x == 1) printf("|     ^     |\n");
             else printf("|        ^  |\n");
-
+             
             printf("Score: %d   Lives: %d   High Score: %d\n", score, lives, highScore);
-
+            if(lives==0){
+                break;
+            }
             Sleep(140);
             step++;
 
@@ -62,7 +64,6 @@ int main() {
                     lives--;
                     if (lives <= 0) {
                         printf("\nGAME OVER!\n");
-                        break;   // exit game loop
                     }
                     printf("\nYou lost a life! Lives left: %d\n", lives);
                     Sleep(500);
